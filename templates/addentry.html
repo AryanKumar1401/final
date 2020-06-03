@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Add Entry</title>
+        <link  rel="stylesheet" href="/static/login.css">
+            <script src="https://kit.fontawesome.com/c662c1ae13.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script>
+            function EntryAlert() {
+        var note = document.getElementById("exampleFormControlTextarea1");
+        var title = document.getElementById("title");
+       if (note.value == " "){
+           alert("Your note is empty!");
+       }
+       else if (title.value == " "){
+           alert("Please write a title for your note");
+       }
+       else {
+           alert("Congrats! Your note has been saved");
+       }
+            }
+
+        </script>
+        <link rel="icon" href="/static/logo.png">
+        <style>
+            body {
+                    background-color: black;
+    color: #f4c33e;
+            }
+        </style>
+    </head>
+    <body>
+         <ul>
+    <li><a href = "/" ><img src="/static/logo.png" style="height: 0.75cm; width:1cm; border: 1px solid #f4c33e;">Home</a></li>
+    <li><a href = "/benefits">Benefit of note-keeping</a></li>
+
+    <li><a href = "/addentry" style="background-color: #a300cc;">Write new note</a></li>
+    <li><a href = "/history">Revisit old notes</a></li>
+    <li><a href = "/contacts">Contact Us<i class="fas fa-sms"></i></a></li>
+    <li><div style="margin-top: 3px;color:white"><a onclick="theme()"><i class="fas fa-adjust"></i></a></div></li>
+    <script>
+      function theme() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+
+
+   }
+
+
+</script>
+
+    <li class="signin" style="background-color: rgb(212, 150, 35);"><a href = "/register"><i class="far fa-plus-square"></i>  Add an account</a></li>
+    <li class="signin"><a href = "/logout"><i class="fas fa-sign-out-alt"></i>  Logout</a></li>
+    <li class="signin" style=" background-color: black"><a href = "/change_password">Change Password</a></li>
+
+  </ul>
+        <form action="/addentry" method="POST">
+        <div class="form-group">
+            <label for="title"><h4>Enter your note's title here:</h4></label><br>
+            <input style = "border: 2px solid black;" type="text" id="title" placeholder ="Title" name="title"><br><br><br>
+
+
+        <label for="exampleFormControlTextarea1"><h4>Your note goes here:</h4></label><br>
+             <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="8" style="width: 60%; border: 2px solid black;" name="entry"></textarea>
+             <button type="button" class="btn btn-danger" id="clear" onclick="document.getElementById('exampleFormControlTextarea1').value = ''">Clear note</button>
+
+        </div>
+
+
+      <button type="submit" class="btn btn-success btn-lg btn-block" onclick="EntryAlert()">Click here to save your note</button>
+</form>
+    </body>
+</html>

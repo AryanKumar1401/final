@@ -1,0 +1,97 @@
+body {
+
+    background-color: black;
+    color: #f4c33e;
+
+
+}
+h1 {
+    text-align: center;
+    font-style: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+h2 {
+  text-align: center;
+  font-style: oblique;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+
+}
+#mainbody{
+    margin: 100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+    text-decoration: none;
+    color: #f4c33e;
+  }
+  .signin {
+      float: right;
+      background-color: red;
+  }
+
+  .hbody {
+    background-color: black;
+    color: #f4c33e;
+
+
+  }
+ table, th, td {
+   border: 5px solid #f4c33e;
+
+ }
+ tbody {
+   color: #f4c33e;
+ }
+ .htd{
+   padding: 30px;
+ }
+img {
+  height: 14cm;
+  width : 25cm;
+}
+.logo {
+  height: 240px;
+
+  border: 3px solid #f4c33e;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.dark-mode {
+  background-color: white;
+  color:#ff8225;
+}
+entry {
+  max-width: 50px;
+}
+
+.benli {
+  padding-bottom: 60px;
+  font-size:140%;
+
+}
+

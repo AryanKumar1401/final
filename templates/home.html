@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href ="/static/home.css">
+    <script src="https://kit.fontawesome.com/c662c1ae13.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
+
+<link rel="icon" href="/static/logo.png">
+  </head>
+<body>
+  <ul>
+    <li><a href = "/" style="background-color: #a300cc;"><img src="/static/logo.png" style="height: 0.75cm; width:1cm; border: 1px solid #f4c33e;">Home</a></li>
+    <li><a href = "/benefits">Benefit of note-keeping</a></li>
+
+    <li><a href = "/addentry">Write new note</a></li>
+    <li><a href = "/history">Revisit old notes</a></li>
+    <li><a href = "/contacts">Contact Us<i class="fas fa-sms"></i></a></li>
+    <li><div style="margin-top: 3px; color:white"><a onclick="theme()"><i class="fas fa-adjust"></i></a></div></li>
+    <script>
+      function theme() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+
+}
+    </script>
+
+    <li class="signin" style="background-color: rgb(212, 150, 35);"><a href = "/register"><i class="far fa-plus-square"></i>  Add an account</a></li>
+    <li class="signin"><a href = "/logout"><i class="fas fa-sign-out-alt"></i>  Logout</a></li>
+    <li class="signin" style="height: 10%; background-color: black"><a href = "/change_password">Change Password</a></li>
+  </ul>
+
+  <div id="mainbody">
+  <div class="imgcontainer">
+    <img class ="logo" src="/static/logo.png">
+  </div>
+<h1>Welcome to Emotions Hub!</h1><br><br>
+<div id ="headdiv"style="background-color: lightsalmon;">
+<h2>About Us</h2></div>
+<p>Emotions are <em>versatile</em>. Emotions are <em>frivolous</em>. However, emotions are never to be neglected. Emotions can either take a person to the heights of ecsatsy,
+  or the depths of misery. In the present scenario, people are falling prey to emotions
+  they cannot counter, because of the inability to express themselves.<br><br> It is time for emotions to be acknowledged by every individual,
+  irrespective of it type. Whether it maybe expressing your feelings about a particular event or an occassion, the highlight of the day,
+  or merely just a journal indicating your milestones covered, penning down your thoughts is of utmost importance.<br><br><br>
+   Emotions Hub was established in 2020 with the aim of helping people to confront and accept their emotions, by providing a platform to express one's emotions.
+   Whether you’re looking for a tool to record your daily emotions and activities in a reflective journal, keep track of milestones in a food diary or a travel journal,
+   or even record your dreams in a dream journal, Emotions Hub has you covered.<br><br>
+Emotions Hub  gives you all the tools you need to focus on the ideas you want to preserve, rather than the process of writing itself.
+Emotion Hub's virtual secret diary provides privacy, while also giving you the freedom to journal on the go.<br> Your digital diary goes wherever you do. Going on vacation any time soon? Emotions Hub can support you and journal about your experiences. Have an inspiring idea while sitting in the cafe? Open up your online diary and jot it down.
+   </p>
+<br>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="5000">
+      <img src="https://marketingland.com/wp-content/ml-loads/2014/09/right-brain-left-brain-ss-1920.jpg" class="d-block w-100" alt="...">
+      Versatile
+    </div>
+    <div class="carousel-item"  data-interval="1000">
+      <img src="https://www.anxietycanada.com/wp-content/uploads/2019/02/background-black-blank-733857.jpg" class="d-block w-100" alt="...">
+      Frivolous
+    </div>
+    <div class="carousel-item" data-interval="1000">
+      <img src="https://image.freepik.com/free-vector/emoji-emoticons-set-face-expression-feelings-collection_53876-6336.jpg" class="d-block w-100" alt="empathic">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true" aria-color="black"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<a style="text-decoration: None;s" href="/addentry"><button class="btn btn-primary btn-lg btn-block">What are you waiting for? Start writing your note!</button></a>
+
+
+</body>
+</html>
